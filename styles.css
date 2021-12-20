@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: ubuntu, sans-serif;
+}
+
+.wrap {
+  display: flex;
+}
+
+form {
+  padding: 50px 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  margin: 5px;
+}
+
+.sub-title {
+  margin: 10px 0;
+  font-weight: bold;
+  margin: 30px 0 10px 0;
+}
+
+#info-group,
+#senators-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 6px 0 16px 0;
+}
+
+/*  Title section
+--------------------------------------------*/
+
+.title-container {
+  padding-left: 20px;
+}
+
+#title {
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+#description {
+  margin-bottom: 10px;
+}
+
+/*  Information
+--------------------------------------------*/
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+/*  Form
+--------------------------------------------*/
+.form-container {
+  width: 80%;
+  padding: 0 20px;
+  background: burlywood;
+}
+
+/*  President styles
+--------------------------------------------*/
+
+.pres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.pres-content {
+  display: flex;
+  text-align: center;
+}
+
+.pres img {
+  margin: 10px 0;
+  width: 100px;
+  height: 130px;
+}
+
+/*  Vice president styles
+--------------------------------------------*/
+option {
+  font-size: 1rem;
+}
+
+/*  Comment area
+--------------------------------------------*/
+#comments {
+  width: 100%;
+  height: 250px;
+}
+
+button {
+  padding: 8px 25px;
+  border-radius: 8px;
+  background: rgb(189, 76, 11);
+  color: #ccc;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #ccc;
+  color: rgb(189, 76, 11);
+}
+
+/*  Responsive area
+--------------------------------------------*/
+
+@media (max-width: 1300px) {
+  .wrap {
+    display: unset;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 936px) {
+  .pres-content {
+    display: block;
+  }
+
+  .pres {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .pres img {
+    margin: 10px;
+  }
+
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+}

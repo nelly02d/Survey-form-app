@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Philippine Election 2022 Survey Form</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+  
+<body>
+  <div class="wrap">
+    <div class="title-container">
+        <img class="logo" src="http://ateneo.edu/sites/default/files/styles/full/public/inserted/elections.png">
+        <h1 id="title">Philippine Election 2022 Survey</h1>
+        <p id="description">Thank you for your time. Vote wisely!</p>
+    </div>
+    <div class="form-container">
+      <form id="survey-form">
+      
+  <!--------------------- Information--------------------->
+              
+        <div class="box" id="info-group">
+          <h2>Information</h2>
+          <label id="name-label" class="info" for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="i.e. John Smith">
+    
+          <label id="number-label" class="info" for="age">Age</label>
+          <input id="number" type="number" name="age" min="18"
+                  max="150" placeholder="Your Age.." required>
+    
+          <label id="address-label" class="info" for="address">Town</label>
+          <input id="address" type="text" name="address" placeholder="i.e. Marikina City" required>
+    
+          <label id="email-label" class="info" for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Your Email.." required>
+        </div>
+    
+  <!--------------------- President --------------------->
+        
+        <div class="box">
+          <p class="sub-title">Who is your next President on 2022 Election?</p>
+          <div class="pres-content">
+            <label class="pres">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bongbong_Marcos.jpg/800px-Bongbong_Marcos.jpg">
+              <input name="president" type="radio" class="pres" value="marcos"> Ferdinand "Bongbong" Romualdez Marcos Jr.
+            </label>
+            <label class="pres">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/14th_Vice_President_of_the_Philippines_Leni_Robredo.png/94px-14th_Vice_President_of_the_Philippines_Leni_Robredo.png">
+              <input name="president" type="radio" value="robredo"> Leni Robredo 
+            </label>
+            <label class="pres">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Pacquiao_and_Didal_%28cropped%29.jpg">
+              <input name="president" type="radio" value="pacquiao"> Many Pacquiao
+            </label>
+            <label class="pres">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Panfilo_Lacson_PARR_cropped.jpg">
+              <input name="president" type="radio" value="lacson"> Ping Lacson
+            </label>
+            <label class="pres">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/IskoMorenoOfficialPortrait.jpg/800px-IskoMorenoOfficialPortrait.jpg">
+              <input name="president" type="radio" value="moreno"> Isko Moreno
+            </label>
+            <label class="pres">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/NorbertoGonzales.jpg">
+              <input name="president" type="radio" value="gonzales"> Norberto Gonzales
+            </label>
+            <label class="pres">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Leody_de_Guzman_filing_his_CoC_2021.jpg">
+              <input name="president" type="radio" value="deguzman"> Leody de Guzman
+            </label>
+            <label class="pres">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Ernesto_Abella_-_2016_%28cropped%29.jpg">
+              <input name="president" type="radio" value="abella"> Ernesto Abella
+            </label>
+          </div>
+        </div>
+        
+  <!-------------------- Vice President ----------------->
+        <div class="box">
+          <p class="sub-title">Who is your next Vice President on 2022 Election?</p>
+          <select id="dropdown" name="vicepresident" required>
+            <option disabled selected value>Your next Vice President?</option>
+            <option value="duterte">Sarah Duterte</option>
+            <option value="atienza">Lito Atienza</option>
+            <option value="bello">Walden Bello</option>
+            <option value="ong">Willie Ong</option>
+            <option value="pangilinan">Francis Pangilinan</option>
+            <option value="sotto">Tito Sotto</option>
+          </select>
+        </div>
+        
+    <!-------------------- Senators ----------------->
+        
+        <div class="box" id="senators-group">
+          <p class="sub-title">Please select your Senatorial candidates?</p>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="angara"> Sonny Angara  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="ang"> Ramon S. Ang  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="binay"> Nancy Binay 
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="carpio"> Antonio Carpio  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="cayetano"> Alan Peter Cayatano  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="drillon"> Franklin Drilon  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="duterte"> Rodrigo Duterte  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="escudero"> Francis Escudero  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="gatchallan"> Win Gatchallan  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="gordon"> Richard J. Gordon 
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="marcos"> Imee Marcos  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="Poe"> Grace Poe  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="romualdez"> Martin Romualdez  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="santos"> Vilma Santos  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="teodoro"> Gilbert Teodoro  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="trillanes"> Atonio Trillanes  
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="villanueva"> Eddie Villanueva 
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="villar"> Cynthia Villar 
+          </label>
+          <label class="senate">
+            <input name="Senators" type="checkbox" class="senate" value="villar"> Manuel Villar  
+          </label>
+        </div>
+    
+    <!--------------------------------- Comment Area ------------------------------------------------->
+    
+        <div class="box">
+          <p class="sub-title">Comments or suggestions?</p>
+          <textarea id="comments" name="commentarea" type="text" placeholder="Write Something here..."></textarea>
+        </div>
+        <button id="submit" type="submit" name="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
